@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiKey = 'f657e8986bca4391ad008d9128937782';
+const apiKey = import.meta.env.VITE_API_KEY;
 
 if (!apiKey) {
   throw new Error('API_KEY is not defined');
